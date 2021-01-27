@@ -1,50 +1,67 @@
 .skills {
-    background-color: #444;   
+    background-color:black;   
 }
 
 .brendanPic {
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     position: fixed;
-    top: 35%;
-    left: 50%;
+    top: 25%;
+    left: 45%;
 }
     
 .name {
-     color: #ff4500;
+     color: #ff6700;
      text-align: center;
      position: fixed;
-     top: 53%;
-     left: 45%;
+     top: 56.5%;
+     left: 40%;
 }
 .navbar {
     display: block;
     position: fixed;
     top: 0px;
+    bottom: 0px;
     left: 0px;
-    background: blue;
-
-}
-.navbar-1 {
-    padding: 15px;
-    text-align: center; 
+    background-color: #494947; 
 }
 
 a {
-    background-color: transparent;
-    color:#ff4500;
-    line-height: 50px;
-    top: 50%;
-    list-style-type: none;
+    /* This is the section for the different pages */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #Ff6700;
+    line-height: 40px;
+    list-style: none;
     text-decoration: none;
-
+    padding: 10px;
 }
 
-.aboutTab {
-    display: block;
+#homeIcon {
+    height: 60px;
+    width: 62px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-right: 15px;
+}
+.homeTab {
+    opacity: 1;
+    display:block;
     padding-bottom: 20px;
+    
 }
+
+
+
+#homeIcon:hover {
+    opacity: 0;
+    transition-duration: 0s;
+
+}
+
 
 .skillsTab {
     display: block;
@@ -63,34 +80,31 @@ a {
 
 /* Start of Social media icons */
 
-.twitter_icon {
+.social {
     position: absolute;
-    top: 75%;
-    left: 35px;
-    height: 25px;
-    width: 25px;
+    bottom: 0px;
+    background-color: transparent;
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+.twitter_icon {
+    height: 35px;
+    width: 35px;
 }
 
 .linkedin_icon {
-    position: absolute;
-    top: 80%;
-    left: 35px;
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
 }
 
 .github_icon {
-    position: absolute;
-    top: 85%;
-    left: 35px;
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
 }
 
 .instagram_icon {
-    position: absolute;
-    top: 90%;
-    left: 35px;
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
 }
