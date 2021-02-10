@@ -1,110 +1,251 @@
-.skills {
-    background-color:black;   
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+.body {
+    background-color: #fff; 
+    overflow-y: scroll; 
+    font-family: 'Architects Daughter', cursive;
 }
 
-.brendanPic {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    position: fixed;
-    top: 25%;
-    left: 45%;
-}
+
     
 .name {
-     color: #ff6700;
-     text-align: center;
-     position: fixed;
-     top: 56.5%;
-     left: 40%;
-}
-.navbar {
-    display: block;
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: #494947; 
+     color: #000;
+     position: absolute;
+     top: 25%;
+     left: 20%;
+     font-size: 50px;
 }
 
-a {
+
+.navbar-1 {
     /* This is the section for the different pages */
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #Ff6700;
-    line-height: 40px;
-    list-style: none;
-    text-decoration: none;
-    padding: 10px;
-}
-
-#homeIcon {
-    height: 60px;
-    width: 62px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding-right: 15px;
-}
-.homeTab {
-    opacity: 1;
-    display:block;
-    padding-bottom: 20px;
+    flex-direction: row;
+    padding-top: 25px;
     
 }
 
-
-
-#homeIcon:hover {
-    opacity: 0;
-    transition-duration: 0s;
-
-}
-
-
-.skillsTab {
+#logo {
+    mix-blend-mode: multiply;
     display: block;
-    padding-bottom: 20px;
+    height: 75px;
+    width: 125px;
+    position: fixed;
+    top: 1%;
+    left: 5%;
+    padding: 15px;
+    border-radius: 20px;
+    z-index: 1;
 }
 
-.workTab {
-    display: block;
-    padding-bottom: 20px;
+.contactButton {
+    position: fixed;
+    left: 85%;
+    padding: 15px;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 1;
 }
 
-.contactTab {
-    display: block;
-    padding-bottom: 20px;
-}
+/* Start of the about me section */
 
-/* Start of Social media icons */
 
-.social {
+.aboutSection {
+    background-color: grey;
+    height: 200px;
+    padding: 100px;
     position: absolute;
-    bottom: 0px;
-    background-color: transparent;
-    list-style-type: none;
-    padding: 10px;
+    top: 100%;
+    right: 0px;
+    left: 0px;
+}
+#introduction {
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+}
+#aboutParagraph {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: large;
+}
 
+/* Start of the skills column */
+.designer {
+    background-color: blue;
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    top: 135%;
+    left: 29%;
+    font-family: 'Architects Daughter', cursive;
+    border-radius: 15px;
+}
+#designerTitle {
+    position: absolute;
+    left: 20%;
+
+}
+#designerP1 {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    line-height: 20px;
+}
+#designerP2Header {
+    position: absolute;
+    top: 35%;
+    left: 27%;
+    
+}
+#designerP2 {
+    position: absolute;
+    top: 42%;
+    left: 20%;
+}
+#designerP3Header {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+#designerP3 {
+    position: absolute;
+    top: 57%;
+    left: 38%;
+    line-height:30px;
+    text-align: center;
+}
+
+
+/* Start of the Front-End developer column */
+.front-end {
+    background-color: blue;
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    top: 135%;
+    left: 53%;
+    font-family: 'Architects Daughter', cursive;
+    border-radius: 15px;
+
+}
+#front-endTitle {
+    position: absolute;
+    left: 8%;
+}
+#front-endP1 {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+#front-endP2Header {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+#front-endP2 {
+    position: absolute;
+    top: 42%;
+    left: 20%;
+}
+#front-endP3Header {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+#front-endP3 {
+    position: absolute;
+    top: 57%;
+    left: 30%;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/* Start of the Projects Section */
+.projectSection {
+    background-color: grey;
+    height: 300px;
+    padding: 100px;
+    Position: absolute;
+    top: 230%;
+    right: 0px;
+    left: 0px;
+}
+#projectSectionHeader {
+    position: absolute;
+    top: 5%;
+    left: 46%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Start of footer and Social media icons */
+
+#footerElementPositioning {
+    position: absolute;
+    bottom: 5%;
+    left: 48%;  
+}
+#footerSectionBackgroundColor {
+    background-color:#fff;
+    height: 100px;
+    position: absolute;
+    top: 300%;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    list-style-type: none;
+    
+    
 }
 
 .twitter_icon {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
+    
 }
 
 .linkedin_icon {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
+    padding-left: 10px;
 }
 
 .github_icon {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
+    padding-left: 10px;
 }
 
 .instagram_icon {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
+    padding-left: 10px;
 }
+
+.footerName {
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+

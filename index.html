@@ -1,33 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="utf-8" />
-    <!--Link css file to html file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+<!--Link css file to html file -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
-    <!--Create a navbar -->
-    <nav class="navbar">   
-        
 <!-- ******* URGENT ******* Make sure to go change these to the actual links when hosted because these files are only local so nobody else could get to them -->
            <div class="navbar-1"> 
-               <a href="/index.html" class="homeTab">Home</a>
-            <img src="/images/homeIcon1.png" id="homeIcon">
-            <div class="aboutTab-2">
-                <a href="html/About.html" class="aboutTab">About</a> 
+                <img src="/images/logo.png" alt="logo" id="logo">
+                <button class="contactButton">Contact </button>
             </div>
-                
-            <img>    
-                <a href="html/skills.html" class="skillsTab">Skills</a>
-            <img>
-                <a href="html/work.html" class="workTab">My Work</a> 
-            <img>
-                <a href="html/contact.html" class="contactTab">Contact</a>
+    
+<!-- My name-->       
+    <header class="header">
+        <h1 class="name">UI/UX Designer & Front-End Web Developer</h1>
+    </header>
+
+    <body>
+<!-- Add about me paragraph section-->
+        <section class="aboutSection">
+                <h1 id="introduction">Hello, My name is Brendan Hawk</h1>
+                <p id="aboutParagraph"> I have a Programming & Software Development degree from the University of Toledo.<br>
+                    I have a passion for designing and implementing those designs on websites. I am<br> 
+                     a team player, enjoy problem solving, and dedicated to continuously improving.  
+                </p>
+            </section>
+
+<!-- Add the designer column and section -->
+            <div class="designer">
+                <h1 id="designerTitle">UI/UX Designer</h1>
+                <p id="designerP1">I appreciate simple, thought out, 
+                    <br>and organized design patterns.<br> The
+                    user's experience is of the utmost importance.
+                </p>
+
+                <h3 id="designerP2Header"><b>I Prefer designing:</b></h3>
+                <p id="designerP2">
+                     UI, UX, Websites, and Logos
+                </p>
+
+                <h3 id="designerP3Header">
+                    <b>Preferred design methods:</b> 
+                </h3> 
+                <p id="designerP3">
+                     Pen & Paper 
+                    <br>Sketch.io
+                    <br>Canva
+                    <br>Paint 3D
+                </p>  
             </div>
-        <!-- Add social media links. Twitter, linkIn, Github, Instagram -->
-        <ul class="social">
+
+<!-- Add the Front-End column and section -->
+            <div class="front-end">
+                <h1 id="front-endTitle">Front-End Developer</h1>
+
+                <p id="front-endP1">
+                    I enjoy building projects from the ground up, and 
+                    creating business  <br>solutions.
+                </p>
+                <h3 id="front-endP2Header">My languages of choice:</h3>
+                <p id="front-endP2">
+                    HTML, CSS, JavaScript, C#
+                </p>
+                <h3 id="front-endP3Header">Developer tools: </h3>
+                <p id="front-endP3">
+                    Visual Studio Code 
+                    <br> Visual Studio
+                    <br> CodePen
+                    <br> Github
+                </p>
+            </div>
+
+<!-- Create project section -->
+        <div class="projectSection">
+            <h1 id="projectSectionHeader">Recent Projects</h1>
+
+        </div>
+        
+    </body>
+
+<!-- Add social media links. Twitter, linkIn, Github, Instagram in the footer -->
+    <footer id="footerSectionBackgroundColor">
+        <div id="footerElementPositioning">
+            <h3 class="footerName">Brendan Hawk</h3>
+                <ul class="social">
             <li>
                 <a href="https://twitter.com/brendanhawk03"> 
                     <i class="twitter">
-                        <!-- Add twitter icon-->
+<!-- Add twitter icon-->
                         <img src="images/twitterIcon.webp" class="twitter_icon">
                     </i>
                 </a>
@@ -35,7 +96,7 @@
             <li>
                 <a href="www.linkedin.com/in/brendan-hawk-2240571b7">
                     <i class="linkedin">
-                        <!-- Add linkedin icon -->
+<!-- Add linkedin icon -->
                         <img src="images/linkinedinIcon.webp" class="linkedin_icon">
                     </i>
                 </a>
@@ -43,7 +104,7 @@
             <li>
                 <a href="https://github.com/bhawk3">
                     <i class="github">
-                        <!-- Add github icon -->
+<!-- Add github icon -->
                         <img src="images/githubIcon.webp" class="github_icon">
                     </i>
                 </a>
@@ -51,27 +112,12 @@
             <li>
                 <a href="https://www.instagram.com/b_the_dev/">
                     <i class="instagram">
-                        <!-- Add instagram icon-->
+<!-- Add instagram icon-->
                         <img src="images/instagramIcon.webp" class="instagram_icon">
                     </i>
                 </a>
             </li>
         </ul>
-    </nav>
     </div>
-
-    <header class="header">
-        <!-- Input image and my name-->
-        <img src="images/brendan.jpg" alt="Brendan's picture" class="brendanPic">
-        <h1 class="name">Brendan Hawk: Web Developer</h1>
-    </header>
-
-    <body class=" skills">
-    <!-- Add skills and projects-->
-        <img href="">
-    </body>
-
-    <footer>
-
     </footer>
 </html>
