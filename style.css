@@ -170,7 +170,7 @@
 /* Start of the Projects Section */
 .projectSection {
     background-color: grey;
-    height: 300px;
+    height: 650px;
     padding: 100px;
     Position: absolute;
     top: 230%;
@@ -182,10 +182,99 @@
     top: 5%;
     left: 46%;
 }
+/* Linking Projects */
+/* tictactoeProject and hover */
+#tictactoeProject{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 1;  
+}
+#tictactoeProjectHover {
+    color: black;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    padding: 15px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+#tictactoeProject:hover {
+    opacity: 0;
+}
 
+/* pieceworkProject and hover */
+#pieceworkProject {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 42%; 
+    z-index: 1; 
+}
+#pieceworkProjectHover {
+    color: black;
+    position: absolute;
+    top: 35%;
+    left: 48%;
+    padding: 15px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+#pieceworkProject:hover {
+    opacity: 0;
+}
 
+/* turnoverRatio project and hover */
+#turnoverRatio {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 64%;
+    z-index: 1;
+}
+#turnoverRatioProjectHover {
+    color: black;
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    padding: 15px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    
+}
+#turnoverRatio:hover {
+    opacity: 0;
+}
 
-
+/* Mailing label project and hover */
+#mailingLabel {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 60%;
+    left: 42%;
+    z-index: 1;
+}
+#mailingLabelHover {
+    color: black;
+    position: absolute;
+    top: 75%;
+    left: 49%;
+    padding: 15px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+#mailingLabel:hover {
+    opacity: 0;
+}
 
 
 
@@ -204,7 +293,7 @@
     background-color:#fff;
     height: 100px;
     position: absolute;
-    top: 300%;
+    top: 350%;
     right: 0px;
     bottom: 0px;
     left: 0px;
