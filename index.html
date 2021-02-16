@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
-<!--Link css file to html file -->
+<!--Link css file to html file, link google fonts -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
@@ -9,15 +9,27 @@
 <!-- ******* URGENT ******* Make sure to go change these to the actual links when hosted because these files are only local so nobody else could get to them -->
            <div class="navbar-1"> 
                 <img src="/images/logo.png" alt="logo" id="logo">
-                <button class="contactButton">Contact </button>
+                <button ></button>
+                <a href="#contactFormBackground" class="contactButton"><b>Contact </b></a>
             </div>
-    
-<!-- My name-->       
-    <header class="header">
-        <h1 class="name">UI/UX Designer & Front-End Web Developer</h1>
+            
+<!-- My name--> 
+<header class="header">
+        <h1 class="name">UI/UX Designer & <br> Front-End Web Developer</h1>
     </header>
 
     <body>
+<!-- Maple leaf icon for main page animation -->            
+    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf0">
+    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf1">
+    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf2">
+    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf3">
+    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf4">
+    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf5">
+    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf6">
+    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf7">
+    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf8">
+
 <!-- Add about me paragraph section-->
         <section class="aboutSection">
                 <h1 id="introduction">Hello, My name is Brendan Hawk</h1>
@@ -76,20 +88,49 @@
         <div class="projectSection">
             <h1 id="projectSectionHeader">Recent Projects</h1>
             <img src="images/2.5.cs.mailinglabel.PNG" alt="Mailing Label Project" id="mailingLabel" >
-                <a href="https://github.com/bhawk3/2.5.cs-mailing-label" id="mailingLabelHover">View Details</a>
+                <figcaption>
+                    <h1 id="mailingLabelParagraph">Enter information and mailing <br> label will be produced</h1>
+                    <a href="https://github.com/bhawk3/2.5.cs-mailing-label" id="mailingLabelButton">View Code</a>
+                </figcaption>
+                
 <!--turnover Ratio Project and link the view details button -->
             <img src="images/3.1.cs.turnover.JPG" alt="Turnover Ratio Project" id="turnoverRatio">
-                <a href="https://github.com/bhawk3/Turnover-Ratio-3.1.cs" id="turnoverRatioProjectHover">View Details</a>
+                <figcaption>
+                    <h1 id="turnoverRatioProjectParagraph">Output turnover ratio and <br> average inventory</h1>
+                    <a href="https://github.com/bhawk3/Turnover-Ratio-3.1.cs" id="turnoverRatioProjectButton">View Details</a>
+
+                </figcaption>
             
 <!-- piecework project and link the view details button -->
             <img src="images/4.6.cs.piecework.JPG" alt="Paid per Pieces Worked Project" id="pieceworkProject">
-                <a href="https://github.com/bhawk3/5.1-modifiedPiecework.cs" id="pieceworkProjectHover">View Details</a>
-            
+            <figcaption>
+                <h1 id="pieceworkProjectParagraph">Determines your pay based on <br> how much work you complete </h1>
+                <a href="https://github.com/bhawk3/5.1-modifiedPiecework.cs" id="pieceworkProjectButton">View Code</a>
 
-            <!-- tictactoe project and link the view details button -->
-            <img src="images/tictactoeXwinner.cs.firstattempt.JPG" alt="Tic Tac Toe Project" id="tictactoeProject">
-                <a href="https://github.com/bhawk3/TicTacToeProject.cs" id="tictactoeProjectHover">View Details</a>
+            </figcaption>
+
+<!-- tictactoe project and link the view details button -->
+            <img src="images/tictactoe.JPG" alt="Tic Tac Toe Project" id="tictactoeProject">
+                <figcaption>
+                    <h1 id="tictactoeProjectParagraph">Two player Tic tac toe project</h1>
+                    <a href="https://github.com/bhawk3/TicTacToeProject.cs" id="tictactoeProjectButton">View Code</a>
+                </figcaption>
             
+        </div>
+
+<!-- create contact form-->
+        <div id="contactFormBackground">
+            <form action="">
+                <label for="firstName">First Name:</label>
+                    <input type="text" placeholder="Enter your first name here" id="firstName">
+                <label for="lastName">Last Name:</label>
+                    <input type="text" placeholder="Enter your last name here" id="lastName">
+                <label for="contactFormEmail">Email</label>
+                    <input type="email" placeholder="Enter your email address here" id="contactFormEmail">
+                <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
         
     </body>
