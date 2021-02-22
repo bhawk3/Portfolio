@@ -375,10 +375,13 @@ body {
 #contactFormBackground {
     
     position: absolute;
-    top: 375%;
+    top: 360%;
     left: 38%;
     font-weight: bold;
     
+}
+#contactTitle {
+    text-align: center;
 }
 label {
     display: flex;
@@ -393,7 +396,7 @@ input[type=text], input[type=email], textarea {
     resize: vertical;
   }
   
-  input[type=submit] {
+  #submit {
       position: absolute;
       top: 95%;
       left: 225px;
@@ -408,7 +411,7 @@ input[type=text], input[type=email], textarea {
     font-weight:bold;
     font-size: large;
   }
-  input[type=submit]:hover {
+  #submit:hover {
       background-color: #ffcb00;
       box-shadow: 0 0 10px #ffcb00;
   }
@@ -419,16 +422,17 @@ input[type=text], input[type=email], textarea {
 #footerElementPositioning {
     position: absolute;
     bottom: 5%;
-    left: 48%;  
+    left: 50%;  
 }
 #footerSectionBackgroundColor {
     background-color:#c1502e;
     height: 110px;
     position: absolute;
-    top: 547%;
+    top: 470%;
     right: 0px;
     bottom: 0px;
     left: 0px;
+    
 }
 .social {
     display: flex;

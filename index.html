@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
-<!--Link css file to html file, link google fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+<!--Link css file to html file, link JS file, and link google fonts -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
@@ -16,6 +16,10 @@
 <!-- My name--> 
 <header class="header">
         <h1 class="name">UI/UX Designer & <br> Front-End Web Developer</h1>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>    
+        <script defer src="script.js"></script>
     </header>
 
     <body>
@@ -119,21 +123,24 @@
         </div>
 
 <!-- create contact form-->
-        <div id="contactFormBackground">
-            <form action="">
+            <div id="contactFormBackground">
+                <h1 id="contactTitle">Contact</h1>
+            <form method="POST" id="contact-form">
+                <input type="hidden" name="contact_number">
                 <label for="firstName">First Name:</label>
-                    <input type="text" placeholder="Enter your first name here" id="firstName">
+                    <input type="text" placeholder="Enter your first name here" name="fName" id="firstName" required>
                 <label for="lastName">Last Name:</label>
-                    <input type="text" placeholder="Enter your last name here" id="lastName">
-                <label for="contactFormEmail">Email</label>
-                    <input type="email" placeholder="Enter your email address here" id="contactFormEmail">
-                <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                <input type="submit" value="Submit">
+                    <input type="text" placeholder="Enter your last name here" name="lName" id="lastName" required>
+                <label for="contactFormEmail">Email:</label>
+                    <input type="email" placeholder="Enter your email address here" name="Email" id="contactFormEmail" required>
+                <label for="subject">Subject:</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+                <button id="submit" type="submit" value="send">Submit</Button>
             </form>
         </div>
-        
-    </body>
+     </body>
+    
+    
 
 <!-- Add social media links. Twitter, linkIn, Github, Instagram in the footer -->
     <footer id="footerSectionBackgroundColor">
