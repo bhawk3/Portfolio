@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+body { 
+    background-color: white; 
+    overflow-y: scroll; 
+    font-family: 'Architects Daughter', cursive;
+}
+/* Add maple leaf icon and create animation */
+#mapleLeaf0,#mapleLeaf4 {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 15%;
+    transform: rotate(135deg);
+    animation-name: fallingLeaf;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#mapleLeaf1, #mapleLeaf8 {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 25%;
+    transform: rotate(135deg);
+    animation-name: fallingLeaf;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+}
+#mapleLeaf2, #mapleLeaf5, #mapleLeaf7 {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 40%;
+    transform: rotate(135deg);
+    animation-name: fallingLeaf;
+    animation-duration: 5.2s;
+    animation-iteration-count: infinite;
+}
+#mapleLeaf3, #mapleLeaf6 {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 30%;
+    transform: rotate(135deg);
+    animation-name: fallingLeaf;
+    animation-duration: 4.6s;
+    animation-iteration-count: infinite;
+}
+@keyframes fallingLeaf {
+    0% {
+        top: 0px;
+        
+    }
+    
+    100% {
+        top: 750px;
+    }
+
+}
+
+/* ui/ux designer & front-end developer text */
+.name {
+     color: #000;
+     position: absolute;
+     top: 25%;
+     left: 25%;
+     font-size: 75px;
+     text-shadow: 5px 5px 4px #ffcb00;
+     z-index: 1;
+     text-indent: 150px;
+}
+
+
+.navbar-1 {
+    /* This is the section for the different pages */
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    
+}
+
+#logo {
+    mix-blend-mode: multiply;
+    display: block;
+    height: 75px;
+    width: 125px;
+    position: fixed;
+    top: 1%;
+    left: 5%;
+    padding: 15px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* Create contact button and hover */
+.contactButton {
+    background-color: none;
+    position: fixed;
+    left: 88%;
+    padding: 15px;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: large;
+    z-index: 1;
+}
+.contactButton:hover {
+    background-color: #ffcb00;
+    box-shadow: 0 0 10px #ffcb00;
+}
+
+/* Start of the about me section */
+
+
+.aboutSection {
+    background-color: #587e76;
+    height: 200px;
+    padding: 100px;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    left: 0px;
+}
+#introduction {
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+}
+#aboutParagraph {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: large;
+}
+
+/* Start of the skills column */
+.designer {
+    background-color: #c1502e;
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    top: 135%;
+    left: 29%;
+    font-family: 'Architects Daughter', cursive;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #ffcb00;
+}
+#designerTitle {
+    position: absolute;
+    left: 20%;
+
+}
+#designerP1 {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    line-height: 20px;
+}
+#designerP2Header {
+    position: absolute;
+    top: 35%;
+    left: 27%;
+    
+}
+#designerP2 {
+    position: absolute;
+    top: 42%;
+    left: 20%;
+}
+#designerP3Header {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+#designerP3 {
+    position: absolute;
+    top: 57%;
+    left: 38%;
+    line-height:30px;
+    text-align: center;
+}
+
+
+/* Start of the Front-End developer column */
+.front-end {
+    background-color: #c1502e;
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    top: 135%;
+    left: 53%;
+    font-family: 'Architects Daughter', cursive;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #ffcb00;
+}
+#front-endTitle {
+    position: absolute;
+    left: 8%;
+}
+#front-endP1 {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+#front-endP2Header {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+#front-endP2 {
+    position: absolute;
+    top: 42%;
+    left: 20%;
+}
+#front-endP3Header {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+#front-endP3 {
+    position: absolute;
+    top: 57%;
+    left: 30%;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/* Start of the Projects Section */
+.projectSection {
+    background-color: #587e76;
+    height: 650px;
+    padding: 100px;
+    Position: absolute;
+    top: 230%;
+    right: 0px;
+    left: 0px;
+}
+#projectSectionHeader {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+}
+/* Linking Projects */
+/* tictactoeProject and hover */
+#tictactoeProject{
+    height: 300px;
+    width: 335px;
+    position: absolute;
+    top: 20%;
+    left: 19%;
+    z-index: 1; 
+    border-radius: 15px; 
+}
+#tictactoeProjectParagraph {
+    position: absolute;
+    top: 31%;
+    left: 21%;
+    font-size: larger;
+    font-family: 'Architects Daughter', cursive;
+}
+#tictactoeProjectButton {
+    color: black;
+    position: absolute;
+    top: 37%;
+    left: 27%;
+    padding: 15px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+#tictactoeProject:hover {
+    opacity: 0.1;
+}
+
+/* pieceworkProject and hover */
+#pieceworkProject {
+    height: 300px;
+    width: 335px;
+    position: absolute;
+    top: 20%;
+    left: 42%; 
+    z-index: 1;
+    border-radius: 15px; 
+}
+#pieceworkProjectParagraph {
+    position: absolute;
+    top: 28%;
+    left: 44%;
+    font-size: larger;
+    font-family: 'Architects Daughter', cursive;
+}
+#pieceworkProjectButton {
+    color: black;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    padding: 15px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+#pieceworkProject:hover {
+    opacity: 0.1;
+}
+
+/* turnoverRatio project and hover */
+#turnoverRatio {
+    height: 300px;
+    width: 335px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    z-index: 1;
+    border-radius: 15px;
+}
+#turnoverRatioProjectParagraph {
+    Position: absolute;
+    top: 28%;
+    left: 68%;
+    font-size: larger;
+    font-family: 'Architects Daughter', cursive;
+}
+#turnoverRatioProjectButton {
+    color: black;
+    position: absolute;
+    top: 37%;
+    left: 72%;
+    padding: 15px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+#turnoverRatio:hover {
+    opacity: 0.1;
+}
+
+/* Mailing label project and hover */
+#mailingLabel {
+    height: 300px;
+    width: 335px;
+    position: absolute;
+    top: 57%;
+    left: 42%;
+    z-index: 1;
+    border-radius: 15px;
+    
+}
+#mailingLabelParagraph {
+    position: absolute;
+    top: 66%;
+    left: 45%;
+    font-size: larger;
+    font-family: 'Architects Daughter', cursive;
+}
+#mailingLabelButton {
+    color: black;
+    position: absolute;
+    top: 75%;
+    left: 49%;
+    padding: 15px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+#mailingLabel:hover {
+    opacity: 0.1;
+}
+
+/* Contact form */
+#contactFormBackground {
+    
+    position: absolute;
+    top: 360%;
+    left: 38%;
+    font-weight: bold;
+    
+}
+#contactTitle {
+    text-align: center;
+}
+label {
+    display: flex;
+    flex-direction: row;
+}
+input[type=text], input[type=email], textarea {
+    width: 500px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 25px;
+    resize: vertical;
+  }
+  
+  #submit {
+      position: absolute;
+      top: 95%;
+      left: 225px;
+    background-color: none;
+    color: black;
+    padding: 12px 20px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Architects Daughter', cursive;
+    font-weight:bold;
+    font-size: large;
+  }
+  #submit:hover {
+      background-color: #ffcb00;
+      box-shadow: 0 0 10px #ffcb00;
+  }
+
+
+/* Start of footer and Social media icons */
+
+#footerElementPositioning {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;  
+}
+#footerSectionBackgroundColor {
+    background-color:#c1502e;
+    height: 110px;
+    position: absolute;
+    top: 470%;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    list-style-type: none;
+    
+    
+}
+
+.twitter_icon {
+    height: 25px;
+    width: 25px;
+    
+}
+
+.linkedin_icon {
+    height: 25px;
+    width: 25px;
+    padding-left: 10px;
+}
+
+.github_icon {
+    height: 25px;
+    width: 25px;
+    padding-left: 10px;
+}
+
+.instagram_icon {
+    height: 25px;
+    width: 25px;
+    padding-left: 10px;
+}
+
+.footerName {
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+
