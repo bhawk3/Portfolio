@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
 <!--Link css file to html file, link JS file, and link google fonts -->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -8,8 +8,7 @@
 
 <!-- ******* URGENT ******* Make sure to go change these to the actual links when hosted because these files are only local so nobody else could get to them -->
            <div class="navbar-1"> 
-                <img src="/images/logo.png" alt="logo" id="logo">
-                <button ></button>
+                <img src="images/logo.png" alt="logo" id="logo">
                 <a href="#contactFormBackground" class="contactButton"><b>Contact </b></a>
             </div>
             
@@ -23,27 +22,31 @@
     </header>
 
     <body>
+        <div class="mapleLeafAnimation">
 <!-- Maple leaf icon for main page animation -->            
-    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf0">
-    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf1">
-    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf2">
-    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf3">
-    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf4">
-    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf5">
-    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf6">
-    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf7">
-    <img src="/images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf8">
+            <img src="images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf0">
+            <img src="images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf1">
+            <img src="images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf2">
+            <img src="images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf3">
+            <img src="images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf4">
+            <img src="images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf5">
+            <img src="images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf6">
+            <img src="images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf7">
+            <img src="images/mapleleaf.png" alt="Maple Leaf" id="mapleLeaf8">
+        </div>
+
 
 <!-- Add about me paragraph section-->
         <section class="aboutSection">
                 <h1 id="introduction">Hello, My name is Brendan Hawk</h1>
-                <p id="aboutParagraph"> I have a Programming & Software Development degree from the University of Toledo.<br>
-                    I have a passion for designing and implementing those designs on websites. I am<br> 
+                <p id="aboutParagraph"> I have a Programming & Software Development degree from the University of Toledo.
+                    I have a passion for designing and implementing those designs on websites. I am 
                      a team player, enjoy problem solving, and dedicated to continuously improving.  
                 </p>
             </section>
 
-<!-- Add the designer column and section -->
+            <div class="orangeBoxSection"> 
+                <!-- Add the designer column and section -->
             <div class="designer">
                 <h1 id="designerTitle">UI/UX Designer</h1>
                 <p id="designerP1">I appreciate simple, thought out, 
@@ -88,38 +91,49 @@
                 </p>
             </div>
 
+            </div>
+
 <!-- Create project section -->
-        <div class="projectSection">
+        <div class="container">
             <h1 id="projectSectionHeader">Recent Projects</h1>
-            <img src="images/2.5.cs.mailinglabel.PNG" alt="Mailing Label Project" id="mailingLabel" >
-                <figcaption>
-                    <h1 id="mailingLabelParagraph">Enter information and mailing <br> label will be produced</h1>
-                    <a href="https://github.com/bhawk3/2.5.cs-mailing-label" id="mailingLabelButton">View Code</a>
-                </figcaption>
-                
-<!--turnover Ratio Project and link the view details button -->
-            <img src="images/3.1.cs.turnover.JPG" alt="Turnover Ratio Project" id="turnoverRatio">
-                <figcaption>
-                    <h1 id="turnoverRatioProjectParagraph">Output turnover ratio and <br> average inventory</h1>
-                    <a href="https://github.com/bhawk3/Turnover-Ratio-3.1.cs" id="turnoverRatioProjectButton">View Details</a>
-
-                </figcaption>
-            
-<!-- piecework project and link the view details button -->
-            <img src="images/4.6.cs.piecework.JPG" alt="Paid per Pieces Worked Project" id="pieceworkProject">
-            <figcaption>
-                <h1 id="pieceworkProjectParagraph">Determines your pay based on <br> how much work you complete </h1>
-                <a href="https://github.com/bhawk3/5.1-modifiedPiecework.cs" id="pieceworkProjectButton">View Code</a>
-
-            </figcaption>
 
 <!-- tictactoe project and link the view details button -->
-            <img src="images/tictactoe.JPG" alt="Tic Tac Toe Project" id="tictactoeProject">
-                <figcaption>
+                <div class="image1">
+                <img src="images/tictactoe.JPG" alt="Tic Tac Toe Project" id="tictactoeProject">
+                <figcaption class="figcaption1">
                     <h1 id="tictactoeProjectParagraph">Two player Tic tac toe project</h1>
-                    <a href="https://github.com/bhawk3/TicTacToeProject.cs" id="tictactoeProjectButton">View Code</a>
+                    <a href="https://github.com/bhawk3/TicTacToeProject.cs" id="tictactoeProjectButton">View Code</a> 
                 </figcaption>
-            
+                </div>
+
+<!-- piecework project and link the view details button -->
+            <div class="image2">
+            <img src="images/4.6.cs.piecework.JPG" alt="Paid per Pieces Worked Project" id="pieceworkProject">
+            <figcaption class="figcaption2">
+                <h1 id="pieceworkProjectParagraph">Determines your pay based on how much work you complete 
+                </h1>
+                <a href="https://github.com/bhawk3/5.1-modifiedPiecework.cs" id="pieceworkProjectButton">View Code</a>
+            </figcaption>
+            </div>
+
+<!--turnover Ratio Project and link the view details button -->
+            <div class="image3">
+                <img src="images/3.1.cs.turnover.JPG" alt="Turnover Ratio Project" id="turnoverRatio">
+                <figcaption class="figcaption3">
+                    <h1 id="turnoverRatioProjectParagraph">Output turnover ratio and average inventory</h1>
+                    <a href="https://github.com/bhawk3/Turnover-Ratio-3.1.cs" id="turnoverRatioProjectButton">View Code</a>
+                </figcaption>
+            </div>
+
+<!-- mailing lable project and linke the view details button -->
+            <div class="image4">
+              
+            <img src="images/2.5.cs.mailinglabel.PNG" alt="Mailing Label Project" id="mailingLabel" >
+                <figcaption class="figcaption4">
+                    <h1 id="mailingLabelParagraph">Enter information and mailing label will be produced</h1>
+                    <a href="https://github.com/bhawk3/2.5.cs-mailing-label" id="mailingLabelButton">View Code</a>
+                </figcaption> 
+            </div>
         </div>
 
 <!-- create contact form-->
